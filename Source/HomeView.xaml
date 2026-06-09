@@ -1,0 +1,115 @@
+<UserControl x:Class="AbioticLoader.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Background="{StaticResource ScreenBrush}"
+             UseLayoutRounding="True"
+             SnapsToDevicePixels="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Margin="24,18,24,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border Width="112"
+                    Height="112"
+                    CornerRadius="20"
+                    Background="#DBFFF7"
+                    BorderBrush="#90D7CF"
+                    BorderThickness="2"
+                    Margin="0,0,16,0">
+                <Image x:Name="BrandImage"
+                       Margin="8"
+                       Stretch="Uniform"
+                       RenderOptions.BitmapScalingMode="HighQuality" />
+            </Border>
+
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <TextBlock Text="Abiotic Mod Loader"
+                           FontSize="36"
+                           FontWeight="SemiBold"
+                           Foreground="{StaticResource ShellTextBrush}"
+                           TextOptions.TextFormattingMode="Display" />
+                <TextBlock Text="GATE-Main-Server"
+                           Margin="2,2,0,0"
+                           FontSize="13"
+                           Foreground="#26575C"
+                           Opacity="0.9" />
+            </StackPanel>
+        </Grid>
+
+        <UniformGrid x:Name="FolderHost"
+                     Grid.Row="1"
+                     Margin="44,48,44,20"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Top"
+                     Columns="4" />
+
+        <Button x:Name="DeepFieldButton"
+                Grid.RowSpan="3"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Width="112"
+                Height="112"
+                Margin="0,0,30,84"
+                Background="Transparent"
+                BorderThickness="0"
+                Padding="0"
+                Opacity="0.9"
+                Cursor="Hand">
+            <Image x:Name="DeepFieldImage"
+                   Stretch="Uniform"
+                   RenderOptions.BitmapScalingMode="HighQuality" />
+        </Button>
+
+        <Border Grid.Row="2"
+                Margin="30,0,30,22"
+                Background="#DDFBF8"
+                BorderBrush="#A6E4DA"
+                BorderThickness="1"
+                CornerRadius="2"
+                Height="44">
+            <Grid Margin="14,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="ExitButton"
+                        Width="140"
+                        Height="28"
+                        VerticalAlignment="Center"
+                        Background="#FF9E9A"
+                        BorderBrush="#E77E7A"
+                        Foreground="#551E1A"
+                        FontWeight="SemiBold"
+                        Content="LOG OUT" />
+
+                <TextBlock x:Name="StatusText"
+                           Grid.Column="1"
+                           VerticalAlignment="Center"
+                           Margin="16,0,0,0"
+                           Foreground="#2B666A"
+                           FontSize="12"
+                           TextTrimming="CharacterEllipsis" />
+
+                <TextBlock x:Name="ClockText"
+                           Grid.Column="2"
+                           VerticalAlignment="Center"
+                           Foreground="{StaticResource ShellTextBrush}"
+                           FontSize="17"
+                           FontWeight="SemiBold" />
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

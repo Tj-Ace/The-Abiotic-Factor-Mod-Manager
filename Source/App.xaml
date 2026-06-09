@@ -1,0 +1,34 @@
+<Application x:Class="AbioticLoader.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             ShutdownMode="OnMainWindowClose">
+    <Application.Resources>
+        <Color x:Key="ShellBlue">#A8DCE8</Color>
+        <Color x:Key="ShellScreen">#2CCED7</Color>
+        <Color x:Key="ShellScreenSoft">#B8FAF0</Color>
+        <Color x:Key="ShellFrame">#F7FBFB</Color>
+        <Color x:Key="ShellDeep">#17393F</Color>
+        <Color x:Key="ShellText">#123136</Color>
+        <Color x:Key="ShellPink">#FF9696</Color>
+
+        <SolidColorBrush x:Key="ShellBlueBrush" Color="{StaticResource ShellBlue}" />
+        <SolidColorBrush x:Key="ShellScreenBrush" Color="{StaticResource ShellScreen}" />
+        <SolidColorBrush x:Key="ShellScreenSoftBrush" Color="{StaticResource ShellScreenSoft}" />
+        <SolidColorBrush x:Key="ShellFrameBrush" Color="{StaticResource ShellFrame}" />
+        <SolidColorBrush x:Key="ShellDeepBrush" Color="{StaticResource ShellDeep}" />
+        <SolidColorBrush x:Key="ShellTextBrush" Color="{StaticResource ShellText}" />
+        <SolidColorBrush x:Key="ShellPinkBrush" Color="{StaticResource ShellPink}" />
+
+        <LinearGradientBrush x:Key="WindowBackgroundBrush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#9FD2E0" Offset="0" />
+            <GradientStop Color="#81BFD1" Offset="0.55" />
+            <GradientStop Color="#B1E1EB" Offset="1" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="ScreenBrush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#44D6D9" Offset="0" />
+            <GradientStop Color="#2BCED7" Offset="0.42" />
+            <GradientStop Color="#16BFC4" Offset="1" />
+        </LinearGradientBrush>
+    </Application.Resources>
+</Application>
